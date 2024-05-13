@@ -1,0 +1,135 @@
+body{
+    width: 100dvw;
+    height: 100dvh;
+    background: rgb(0,0,0);
+background: linear-gradient(118deg, rgba(0,0,0,1) 0%, rgba(121,9,45,1) 22%, rgba(255,136,0,1) 100%);
+color: #FFF;
+}
+
+main{
+    height: calc(100dvh - 112px);
+    display: flex;
+    gap: 16px;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    border-bottom: 1px solid;
+
+}
+
+.titleContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.titleContainer h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.titleContainer img{
+    width: 64px;
+    height: 64px;
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+}
+
+aside{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    width: 256px;
+    height: calc(100% - 32px);
+}
+
+aside h2{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+aside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+li button{
+
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    
+}
+
+section{
+    border: 1px solid white;
+    width: 100%;
+    margin: 16px;
+    position: relative;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+section button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 12px;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+}
+
+.outputField{
+    width: 512px;
+    max-height: 256px;
+    min-height: fit-content;
+    background-color: #D0D0D0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    border-radius: 4px;
+    color: black;
+}
+
+.outputField img{
+    width: 94px;
+    height: 94px;
+    border-radius: 100%;
+}
+
+#ageForm{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+#ageVerifierBtn{
+    position: static;
+}
+

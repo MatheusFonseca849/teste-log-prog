@@ -107,6 +107,8 @@ const ageVerifier = () => {
           img.src = "./src/images/ex02/masculino_21anos.jpg";
         } else if (age < 55) {
           img.src = "./src/images/ex02/masculino_55anos.jpg";
+        } else{
+          img.src = "./src/images/ex02/masculino_idoso.jpeg"
         }
       } else if ((selectInput.value = "feminino")) {
         if (age >= 0 && age < 10) {
@@ -115,6 +117,8 @@ const ageVerifier = () => {
           img.src = "./src/images/ex02/feminino_21anos.jpg";
         } else if (age < 55) {
           img.src = "./src/images/ex02/feminino_55anos.jpeg";
+        } else {
+          img.src = "./src/images/ex02/feminino_idosa.jpeg"
         }
       }
 

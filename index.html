@@ -1,60 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@200..900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/style.css" />
-    <link rel="shortcut icon" href="./src/images/logo.png" >
-    <title>Document</title>
-  </head>
-  <body >
-    <header>
-        <div class="titleContainer">
-            <img src="./src/images/logo.png" alt="Logo IESB">
-            <h1>Desafio Guanabara</h1>
-        </div>
-      <div class="info">
-        <p>Matheus Guilherme da Fonseca Iizuka</p>
-        <span>Matrícula: 24114290035</span>
-        <span>Turma: OADSDM1AB</span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:wght@200..900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./src/styles/reset.css" />
+  <link rel="stylesheet" href="./src/styles/style.css" />
+  <link rel="shortcut icon" href="./src/images/logo.png">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <div class="titleContainer">
+      <img src="./src/images/logo.png" alt="Logo IESB">
+      <h1>Desafio Guanabara</h1>
+    </div>
+    <div class="info">
+      <p>Matheus Guilherme da Fonseca Iizuka</p>
+      <span>Matrícula: 24114290035</span>
+      <span>Turma: OADSDM1AB</span>
+    </div>
+  </header>
+  <main>
+    <aside>
+      <h2>Lista de exercícios:</h2>
+      <ul>
+        <li>
+          <button class="exerciseBtn" id="1">Exercício 1</button>
+        </li>
+        <li>
+          <button class="exerciseBtn" id="2">Exercício 2</button>
+        </li>
+        <li>
+          <button class="exerciseBtn" id="3">Exercício 3</button>
+        </li>
+        <li>
+          <button class="exerciseBtn" id="4" >Exercício 4</button>
+        </li>
+        <li>
+          <button class="exerciseBtn" id="5">Exercício 5</button>
+        </li>
+      </ul>
+    </aside>
+    <section>
+      <div id="result">
       </div>
-    </header>
-    <main>
-      <aside>
-        <h2>Lista de exercícios:</h2>
-        <ul>
-          <li>
-            <button id="1">Exercício 1</button>
-          </li>
-          <li>
-            <button id="2">Exercício 2</button>
-          </li>
-          <li>
-            <button id="3">Exercício 3</button>
-          </li>
-          <li>
-            <button id="4">Exercício 4</button>
-          </li>
-          <li>
-            <button id="5">Exercício 5</button>
-          </li>
-        </ul>
-      </aside>
-      <section>
-        <div id="result">
+      <button>Limpar resultados</button>
+    </section>
+  </main>
 
-        </div>
-        <button>Limpar resultados</button>
-      </section>
-    </main>
+  <script src="./src/scripts/script.js"></script>
+</body>
 
-    <script src="./src/scripts/script.js"></script>
-  </body>
 </html>

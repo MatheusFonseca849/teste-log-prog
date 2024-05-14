@@ -1,52 +1,50 @@
-body{
+body {
     width: 100dvw;
     height: 100dvh;
-    background: rgb(0,0,0);
-background: linear-gradient(118deg, rgba(0,0,0,1) 0%, rgba(121,9,45,1) 22%, rgba(255,136,0,1) 100%);
-color: #FFF;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(118deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 45, 1) 22%, rgba(255, 136, 0, 1) 100%);
+    color: #FFF;
 }
 
-main{
+main {
     height: calc(100dvh - 112px);
     display: flex;
     gap: 16px;
 }
 
-header{
-
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 18px 24px;
     border-bottom: 1px solid;
-
 }
 
-.titleContainer{
+.titleContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 12px;
 }
 
-.titleContainer h1{
+.titleContainer h1 {
     font-size: 22px;
     font-weight: 700;
 }
 
-.titleContainer img{
+.titleContainer img {
     width: 64px;
     height: 64px;
 }
 
-header div{
+header div {
     display: flex;
     flex-direction: column;
     gap: 8px;
     font-size: 18px;
 }
 
-aside{
+aside {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -55,29 +53,28 @@ aside{
     height: calc(100% - 32px);
 }
 
-aside h2{
+aside h2 {
     font-size: 18px;
     font-weight: 700;
 }
 
-aside ul{
+aside ul {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-li button{
-
+li button {
     background-color: transparent;
     border: 1px solid white;
-    padding: 8px;
+    padding: 16px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 4px;
     color: white;
-    
 }
 
-section{
+section {
     border: 1px solid white;
     width: 100%;
     margin: 16px;
@@ -96,13 +93,14 @@ section button {
     margin: 12px;
     background-color: transparent;
     border: 1px solid white;
-    padding: 8px;
+    padding: 16px;
+    font-size: 18px;
     cursor: pointer;
     border-radius: 4px;
     color: white;
 }
 
-.outputField{
+.outputField {
     width: 512px;
     max-height: 256px;
     min-height: fit-content;
@@ -117,19 +115,18 @@ section button {
     color: black;
 }
 
-.outputField img{
+.outputField img {
     width: 94px;
     height: 94px;
     border-radius: 100%;
 }
 
-#ageForm{
+.outputForm {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-#ageVerifierBtn{
+.formBtn {
     position: static;
 }
-

@@ -297,10 +297,37 @@ const numberAnalizer = () => {
         }else{
             alert("Valor inválido ou já adicionado")
         }
-    })
+        
+      })
+      let analizerBtn = document.createElement("button")
+      analizerBtn.classList = "formBtn"
+      analizerBtn.innerHTML = "Verificar"
+      analizerBtn.addEventListener("click", () => {
+        console.log("clicked")
+        let greatestNumber = array[0]
+        let smallestNumber = array[0]
+        let sum = array.reduce((a, c) => a+c, 0)
+        for(let i = 0 ; i <= array.length ; i++){
+          if(array[i] > greatestNumber){
+            greatestNumber = array[i]
+          }
+          if(array[i] < smallestNumber){
+            smallestNumber = array[i]
+          }
+        }
+        console.log(greatestNumber, smallestNumber, sum)
+        result.innerHTML = `
+          <p>O menor número da lista é ${smallestNumber}</p>
+          <p>O maior número da lista é ${greatestNumber}</p>
+          <p>A soma dos valores é ${sum}</p>
+          <p>Foram inseridos ${array.length} números na lista</p>
+        `
+      })
 
     form.append(numberLabel, btn)
-    template.append(form, userFeedback, result)
+
+
+    template.append(form, userFeedback, analizerBtn, result)
     display.append(template)
 
 }
